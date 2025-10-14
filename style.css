@@ -1,0 +1,104 @@
+/* 🌑 Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+}
+
+/* 🧮 Calculator Box */
+.calculator {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* 📝 Input Display */
+#inputBox {
+  width: 100%;
+  height: 60px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  text-align: right;
+  padding: 0 15px;
+  font-size: 1.8rem;
+  color: #fff;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* ⌨️ Buttons Grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* 🎨 Button Style */
+button {
+  height: 55px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(8px);
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+/* ✨ Special Buttons */
+button:nth-child(1) { /* C */
+  background: #e74c3c;
+}
+
+button:nth-child(2) { /* DEL */
+  background: #f39c12;
+}
+
+button:nth-child(3),
+button:nth-child(4),
+button:nth-child(8),
+button:nth-child(12),
+button:nth-child(16),
+button:nth-child(20) {
+  background: #3498db;
+}
+
+button:nth-child(1):hover {
+  background: #c0392b;
+}
+
+button:nth-child(2):hover {
+  background: #d35400;
+}
+
+button:nth-child(3):hover,
+button:nth-child(4):hover,
+button:nth-child(8):hover,
+button:nth-child(12):hover,
+button:nth-child(16):hover,
+button:nth-child(20):hover {
+  background: #2980b9;
+}
