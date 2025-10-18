@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <div class="main">
+    <!-- Navbar -->
+    <div class="navbar">
+      <h1>Welcome to Our Gallery</h1>
+      <p>Explore beautiful images</p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="city">City</button>
+      <button class="filter-btn" data-filter="animals">Animals</button>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="gallery">
+      <button class="scroll-btn" id="prevBtn">⟨</button>
+      <div class="imgcontainer">
+        <img src="https://picsum.photos/id/1015/300/200" alt="Nature 1" data-category="nature" loading="lazy">
+        <img src="https://picsum.photos/id/1016/300/200" alt="Nature 2" data-category="nature" loading="lazy">
+        <img src="https://picsum.photos/id/1018/300/200" alt="City 1" data-category="city" loading="lazy">
+        <img src="https://picsum.photos/id/1020/300/200" alt="Animals 1" data-category="animals" loading="lazy">
+        <img src="https://picsum.photos/id/1024/300/200" alt="Nature 3" data-category="nature" loading="lazy">
+        <img src="https://picsum.photos/id/1035/300/200" alt="City 2" data-category="city" loading="lazy">
+        <img src="https://picsum.photos/id/1038/300/200" alt="Animals 2" data-category="animals" loading="lazy">
+        <img src="https://picsum.photos/id/1040/300/200" alt="Nature 4" data-category="nature" loading="lazy">
+        <img src="https://picsum.photos/id/1041/300/200" alt="City 3" data-category="city" loading="lazy">
+        <img src="https://picsum.photos/id/1042/300/200" alt="Animals 3" data-category="animals" loading="lazy">
+        <img src="https://picsum.photos/id/1050/300/200" alt="Nature 5" data-category="nature" loading="lazy">
+        <img src="https://picsum.photos/id/1051/300/200" alt="City 4" data-category="city" loading="lazy">
+      </div>
+      <button class="scroll-btn" id="nextBtn">⟩</button>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>© 2025 My Gallery | All rights reserved.</p>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+    <button class="lightbox-btn prev" id="lightbox-prev">⟨</button>
+    <button class="lightbox-btn next" id="lightbox-next">⟩</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
